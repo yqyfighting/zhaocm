@@ -185,18 +185,6 @@ header .iconfont {
   height: 2.87rem;
   background-color: #fff;
   padding: 0.56rem 0.56rem;
-  position: relative;
-}
-.detailpage .circle {
-  position: absolute;
-  width: 0.15rem;
-  height: 0.15rem;
-  border-radius: 50%;
-  background-color: #eee;
-  top: 50%;
-  -webkit-transform: translateY(-50%) translateX(-50%);
-          transform: translateY(-50%) translateX(-50%);
-  left: 50%;
 }
 .detailpage .listitem {
   display: -webkit-box;
@@ -206,9 +194,13 @@ header .iconfont {
       flex-wrap: wrap;
   -ms-flex-line-pack: center;
       align-content: center;
+  background: url(../img/detail_icon_bg.png) no-repeat;
+  background-size: 6.4rem 2.03rem;
 }
 .detailpage .listitem .item {
-  width: 50%;
+  margin-top: 0.1rem;
+  margin-left: 0.1rem;
+  width: 3rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -217,7 +209,7 @@ header .iconfont {
           align-items: center;
   padding-left: 0.2rem;
   padding-top: 0.15rem;
-  padding-bottom: 0.15rem;
+  padding-bottom: 0.1rem;
 }
 .detailpage .listitem .item span {
   font-size: 0.24rem;
@@ -228,20 +220,67 @@ header .iconfont {
   width: 0.55rem;
   height: 0.55rem;
 }
-.detailpage .listitem .item:first-child {
-  border-bottom: 1px solid #eee;
-  border-right: 1px solid #eee;
-}
-.detailpage .listitem .item:nth-child(3) {
-  border-right: 1px solid #eee;
-}
-.detailpage .listitem .item:nth-child(2) {
-  border-bottom: 1px solid #eee;
-}
 .status {
   height: 5.46rem;
   background-color: #fff;
   border-top: 1px solid #eee;
+  padding-left: 0.33rem;
+  padding-right: 0.36rem;
+}
+.status .tranglewrap {
+  height: 0.5rem;
+  width: 0.6rem;
+  margin-top: 0.1rem;
+  margin-left: 3rem;
+}
+.status .tranglewrap .rect {
+  width: 0.6rem;
+  height: 0.32rem;
+  background-color: #FB0502;
+  font-size: 0.22rem;
+  color: #fff;
+  line-height: 0.32rem;
+  text-align: center;
+}
+.status .tranglewrap .trangle {
+  width: 0rem;
+  height: 0rem;
+  border-top: 0.12rem solid #fb0502;
+  border-right: 0.07rem solid transparent;
+  border-bottom: 0.12rem solid transparent;
+  border-left: 0.07rem solid transparent;
+  margin-top: 0.02rem;
+  margin: 0.02rem auto;
+}
+.status .long {
+  height: 0.16rem;
+  background-color: #F0F0F0;
+  border-radius: 0.08rem;
+}
+.status .long .red {
+  width: 50%;
+  background-color: #FB0502;
+  height: 100%;
+  border-radius: 0.08rem;
+}
+.status .hased {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 0.24rem;
+}
+.status .hased p {
+  font-size: 0.22rem;
+  color: #808080;
+}
+.status .hased span {
+  color: #FF0000;
 }
 footer {
   position: fixed;

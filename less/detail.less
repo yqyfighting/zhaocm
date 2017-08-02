@@ -25,41 +25,57 @@ header{
     display:flex;align-items:center;justify-content:space-between;
     .pl(100);.pr(112);.fs(30);color:#777;
 }
-
 .detailpage{
-    .h(287);background-color: #fff;.p(56,56);position:relative;
-    .circle{
-        position:absolute;.w(15);.h(15);border-radius:50%;
-        background-color:#eee;top:50%;transform:translateY(-50%) translateX(-50%);left:50%;
-    }
+    .h(287);background-color:#fff;.p(56,56);
      .listitem{
         display:flex;flex-wrap:wrap;align-content:center;
+           
+            background:url(../img/detail_icon_bg.png) no-repeat;
+            .bs(640,203);
         .item{
+             .mt(10);.ml(10);
             span{
                 .fs(24);color:#ffc166;.ml(16);
             }
             img{.w(55);.h(55);}
-            width:50%;display:flex;align-items:center;.pl(20);.pt(15);.pb(15);
-            &:first-child{
-                border-bottom:1px solid #eee;border-right:1px solid #eee;
-            }
-            &:nth-child(3){
-                border-right:1px solid #eee;
-            }
-            &:nth-child(2){
-                border-bottom:1px solid #eee;
-            }
+            .w(300);display:flex;align-items:center;.pl(20);.pt(15);.pb(10);
+           
             
         } 
      }   
 }
 .status{
     .h(546);background-color: #fff;border-top:1px solid #eee;
+    .pl(33);.pr(36);
+     .tranglewrap{
+         .h(50);.w(60);.mt(10);.ml(300);
+         .rect{
+             .w(60);.h(32);background-color: #FB0502;.fs(22);color:#fff;
+             .lh(32);.tc;
+         }
+         .trangle{
+             .w(0);.h(0);
+            .border(12,7,12,7);.mt(2);.m(2);  
+         }
+     }
+     .long{
+         .h(16);background-color:#F0F0F0;.br(8);
+         .red{
+             width:50%;background-color: #FB0502;height:100%;.br(8);
+         }
+     }
+     .hased{
+         display:flex;align-items:center;justify-content:space-between;.mt(24);
+         p{.fs(22);color:#808080}
+         span{
+             color:#FF0000;
+         }
+     }
 }
 footer{
     position:fixed;bottom:0px;left:0;right:0;
     .h(105);background-color: #F0F0F0;.pl(36);.pr(14);.fs(32);
-    display:flex;justify-content:space-between;align-items: center;
+    display:flex;justify-content:space-between;align-items:center;
     button{
         .w(517);.h(82);.br(10);outline:none;border:0;
         background-color: #FA3432;.fs(32);color:#fff;.ml(51);
