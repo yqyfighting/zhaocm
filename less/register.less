@@ -1,0 +1,58 @@
+@import "zcm.less";
+
+
+header{
+    .h(92);background-color: #FA3432;
+    display:flex;align-items:center;justify-content:space-between;
+    .pl(27);.pr(36);color:#fff;.fs(28);
+    .iconfont{
+        .fs(50);
+    }
+}
+.phonenumber{
+    background-color: #f9f9f9;.pb(180);
+    .catimg{
+        .h(330);
+        display:flex;
+        img{margin:auto auto;
+        .w(192);.h(192);
+        }
+    }
+    .number{
+        .fs(28);color:#0E0E0E;.mb(22);.ml(38);
+    }
+    .inset{
+        position:relative;
+        .icon-shouji{
+            position:absolute;.fs(50);color:#CDD6D9;top:50%;transform:translateY(-60%);left:5%;
+        }
+        input{
+            .w(700);.h(77);border:1px solid #ccc;.mr(25);.ml(25);
+            .br(10);.fs(30);.pl(60);background-color: #fff;color:#A2A2A2;
+            font-family:"微软雅黑";
+        }
+    }
+    button{
+        .mt(23);
+        .w(692);.h(81);border:0;outline:none;
+        background-color: #FA3432;.br(10);display:block;.mr(29);.ml(29);
+        .fs(30);color:#fff;
+    }
+    .agree{
+        .mt(20);.fs(25);.tc;
+    }
+}
+
+
+footer{
+    .h(165);.pt(45);.tc;.lh(40);.fs(28);color:#494848;
+    .choose{
+        a{.fs(28);color:#494848;.mr(10);.ml(10);}
+    }
+    .copy{
+        .fs(26);color:#9a9b9c;
+    }
+}
+.empty{
+    .h(280);background-color: #f9f9f9;
+}

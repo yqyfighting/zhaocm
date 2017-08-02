@@ -1,0 +1,225 @@
+body {
+  font: 12px/1.5 "微软雅黑", arial, tahoma, 'Hiragino Sans GB', '\5b8b\4f53', sans-serif;
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.clear:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.lh20 {
+  line-height: 20px !important;
+  padding: 4px 0px;
+}
+html,
+body,
+ul,
+li,
+ol,
+dl,
+dd,
+dt,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+fieldset,
+legend,
+img,
+div,
+input,
+header,
+footer,
+section {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+fieldset,
+img {
+  border: none;
+}
+img {
+  display: block;
+}
+address,
+caption,
+cite,
+code,
+dfn,
+th,
+var {
+  font-style: normal;
+  font-weight: normal;
+}
+ul,
+ol {
+  list-style: none;
+}
+input {
+  padding-top: 0;
+  padding-bottom: 0;
+  font-family: "SimSun", "宋体";
+}
+input::-moz-focus-inner {
+  border: none;
+  padding: 0;
+}
+select,
+input {
+  vertical-align: middle;
+}
+select,
+input,
+textarea {
+  font-size: 12px;
+  margin: 0;
+}
+input[type="text"],
+input[type="password"],
+textarea {
+  outline-style: none;
+  -webkit-appearance: none;
+}
+textarea {
+  resize: none;
+}
+input,
+textarea {
+  background: none;
+  border: none;
+}
+table {
+  border-collapse: collapse;
+}
+body {
+  color: #333;
+  font: 12px/20px "微软雅黑", "SimSun", "宋体", "Arial Narrow", HELVETICA;
+  background: #fff;
+}
+a {
+  text-decoration: none;
+}
+a:hover,
+a:active,
+a:focus {
+  text-decoration: none;
+}
+html {
+  font-size: 100px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+header {
+  height: 0.92rem;
+  background-color: #FA3432;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 0.27rem;
+  padding-right: 0.36rem;
+  color: #fff;
+  font-size: 0.28rem;
+}
+header .iconfont {
+  font-size: 0.5rem;
+}
+.phonenumber {
+  background-color: #f9f9f9;
+  padding-bottom: 1.8rem;
+}
+.phonenumber .catimg {
+  height: 3.3rem;
+  display: flex;
+}
+.phonenumber .catimg img {
+  margin: auto auto;
+  width: 1.92rem;
+  height: 1.92rem;
+}
+.phonenumber .number {
+  font-size: 0.28rem;
+  color: #0E0E0E;
+  margin-bottom: 0.22rem;
+  margin-left: 0.38rem;
+}
+.phonenumber .inset {
+  position: relative;
+}
+.phonenumber .inset .icon-shouji {
+  position: absolute;
+  font-size: 0.5rem;
+  color: #CDD6D9;
+  top: 50%;
+  transform: translateY(-60%);
+  left: 5%;
+}
+.phonenumber .inset input {
+  width: 7rem;
+  height: 0.77rem;
+  border: 1px solid #ccc;
+  margin-right: 0.25rem;
+  margin-left: 0.25rem;
+  border-radius: 0.1rem;
+  font-size: 0.3rem;
+  padding-left: 0.6rem;
+  background-color: #fff;
+  color: #A2A2A2;
+  font-family: "微软雅黑";
+}
+.phonenumber button {
+  margin-top: 0.23rem;
+  width: 6.92rem;
+  height: 0.81rem;
+  border: 0;
+  outline: none;
+  background-color: #FA3432;
+  border-radius: 0.1rem;
+  display: block;
+  margin-right: 0.29rem;
+  margin-left: 0.29rem;
+  font-size: 0.3rem;
+  color: #fff;
+}
+.phonenumber .agree {
+  margin-top: 0.2rem;
+  font-size: 0.25rem;
+  text-align: center;
+}
+footer {
+  height: 1.65rem;
+  padding-top: 0.45rem;
+  text-align: center;
+  line-height: 0.4rem;
+  font-size: 0.28rem;
+  color: #494848;
+}
+footer .choose a {
+  font-size: 0.28rem;
+  color: #494848;
+  margin-right: 0.1rem;
+  margin-left: 0.1rem;
+}
+footer .copy {
+  font-size: 0.26rem;
+  color: #9a9b9c;
+}
+.empty {
+  height: 2.8rem;
+  background-color: #f9f9f9;
+}
