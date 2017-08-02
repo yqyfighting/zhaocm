@@ -1,0 +1,402 @@
+body {
+  font: 12px/1.5 "微软雅黑", arial, tahoma, 'Hiragino Sans GB', '\5b8b\4f53', sans-serif;
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.clear:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.lh20 {
+  line-height: 20px !important;
+  padding: 4px 0px;
+}
+html,
+body,
+ul,
+li,
+ol,
+dl,
+dd,
+dt,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+fieldset,
+legend,
+img,
+div,
+input,
+header,
+footer,
+section {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+fieldset,
+img {
+  border: none;
+}
+img {
+  display: block;
+}
+address,
+caption,
+cite,
+code,
+dfn,
+th,
+var {
+  font-style: normal;
+  font-weight: normal;
+}
+ul,
+ol {
+  list-style: none;
+}
+input {
+  padding-top: 0;
+  padding-bottom: 0;
+  font-family: "SimSun", "宋体";
+}
+input::-moz-focus-inner {
+  border: none;
+  padding: 0;
+}
+select,
+input {
+  vertical-align: middle;
+}
+select,
+input,
+textarea {
+  font-size: 12px;
+  margin: 0;
+}
+input[type="text"],
+input[type="password"],
+textarea {
+  outline-style: none;
+  -webkit-appearance: none;
+}
+textarea {
+  resize: none;
+}
+input,
+textarea {
+  background: none;
+  border: none;
+}
+table {
+  border-collapse: collapse;
+}
+body {
+  color: #333;
+  font: 12px/20px "微软雅黑", "SimSun", "宋体", "Arial Narrow", HELVETICA;
+  background: #fff;
+}
+a {
+  text-decoration: none;
+}
+a:hover,
+a:active,
+a:focus {
+  text-decoration: none;
+}
+html {
+  font-size: 100px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #FA3432;
+  color: #fff;
+  height: 0.94rem;
+  padding-left: 0.18rem;
+  padding-right: 0.2rem;
+}
+.logo a {
+  color: #ffffff;
+}
+.logo h1 {
+  font-size: 0.3rem;
+  font-weight: normal;
+  margin-left: 0.1rem;
+}
+.logo .logoImg {
+  display: flex;
+  align-items: center;
+}
+.logo .register {
+  font-size: 0.3rem;
+}
+.logo .register a {
+  margin-left: 0.08rem;
+  margin-right: 0.08rem;
+}
+.firstpage {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 0.86rem;
+  background: #fff;
+}
+.firstpage a {
+  font-size: 0.24rem;
+  color: #4b4a4a;
+}
+.firstpage a.first {
+  color: #ff3636;
+}
+.swipe {
+  overflow: hidden;
+  visibility: hidden;
+  position: relative;
+}
+.swipe .swipe-wrap {
+  overflow: hidden;
+  position: relative;
+}
+.swipe .swipe-wrap > div {
+  float: left;
+  width: 100%;
+  position: relative;
+}
+.swipe img {
+  /*让图片100%*/
+  width: 100%;
+}
+.swipe .indirector {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.swipe .indirector span {
+  display: inline-block;
+  margin: 3px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #fff;
+}
+.swipe .indirector span.on {
+  background-color: red;
+}
+.usernav {
+  height: 2rem;
+  padding-top: 0.34rem;
+}
+.usernav .listitem {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.usernav .listitem .item p {
+  text-align: center;
+  font-size: 0.2rem;
+  color: #808080;
+  margin-top: 0.1rem;
+}
+.usernav .listitem .iconfont {
+  display: block;
+  width: 0.9rem;
+  height: 0.9rem;
+  text-align: center;
+  line-height: 0.9rem;
+  border-radius: 30%;
+  font-size: 0.4rem;
+  color: #fff;
+}
+.usernav .listitem .icon-suo {
+  background-color: #4099E9;
+}
+.usernav .listitem .icon-women {
+  background-color: #FB6361;
+}
+.usernav .listitem .icon-xinshouzhiyin {
+  background-color: #40C8B0;
+}
+.usernav .listitem .icon-wenti {
+  background-color: #FFAE28;
+}
+section .hotTitle {
+  height: 0.95rem;
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+section .hotTitle h3 {
+  height: 0.46rem;
+  padding-left: 0.6rem;
+  font-size: 0.3rem;
+  padding-top: 0.08rem;
+  background-size: 0.4rem 0.46rem;
+}
+section .hotTitle .more {
+  font-size: 0.28rem;
+  color: #9a9b9c;
+}
+.hots {
+  padding: 0rem 0.25rem;
+  background-color: #f9f9f9;
+}
+.hots h3 {
+  background: url("../img/home_ico_09.png") no-repeat;
+}
+.hots .hotlist .item {
+  height: 2.55rem;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  padding: 0.25rem 0.27rem;
+  margin-bottom: 0.26rem;
+  border-radius: 0.2rem;
+}
+.hots .hotlist .item:last-child {
+  margin-bottom: 0rem;
+}
+.hots .itemtitle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.hots .itemtitle h4 {
+  font-size: 0.28rem;
+  color: #494848;
+}
+.hots .itemtitle .titleright {
+  height: 0.3rem;
+}
+.hots .itemtitle .money {
+  display: inline-block;
+  width: 0.85rem;
+  height: 0.3rem;
+  background-color: #FFAB37;
+  text-align: center;
+  color: #fff;
+  border-radius: 0.05rem;
+  line-height: 0.3rem;
+  font-size: 0.22rem;
+}
+.hots .itemtitle .icon-vip {
+  display: inline-block;
+  width: 0.33rem;
+  height: 0.3rem;
+  background-color: #FF7404;
+  text-align: center;
+  line-height: 0.3rem;
+  font-size: 0.26rem;
+  color: #fff;
+}
+.hots .data {
+  margin-top: 0.28rem;
+  display: flex;
+  align-items: center;
+}
+.hots .data .left {
+  margin-left: 0.43rem;
+}
+.hots .data .left p {
+  font-size: 0.24rem;
+  color: #ff7900;
+}
+.hots .data .left .baifenshu {
+  font-size: 0.38rem;
+  color: #FB4034;
+}
+.hots .data .middle {
+  margin-left: 0.87rem;
+}
+.hots .data .middle p {
+  color: #9a9b9c;
+  font-size: 0.3rem;
+  line-height: 0.4rem;
+}
+.hots .data .middle .day {
+  color: #3d3c3c;
+  font-size: 0.28rem;
+}
+.hots .data .right {
+  margin-left: 0.7rem;
+}
+.hots .data .right img {
+  width: 1.36rem;
+  height: 1.36rem;
+}
+.trends {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 0.2rem;
+}
+.trends .hotTitle {
+  background-color: #f9f9f9;
+  border-bottom: 1px solid #ccc;
+}
+.trends h3 {
+  background: url("../img/home_ico_10.png") no-repeat;
+}
+.trends .item {
+  display: flex;
+  margin-top: 0.35rem;
+}
+.trends .item img {
+  flex: 0 0 auto;
+  height: 1.1rem;
+  width: 1.1rem;
+  border-radius: 10%;
+  margin-left: 0.23rem;
+}
+.trends .item .wrap {
+  flex: 1 1 auto;
+  margin-left: 0.23rem;
+  line-height: 0.4rem;
+  margin-right: 0.25rem;
+}
+.trends .item .wrap h4 {
+  font-size: 0.28rem;
+}
+.trends .item .origin {
+  display: flex;
+  justify-content: space-between;
+  color: #9a9b9c;
+  font-size: 0.24rem;
+}
+footer {
+  height: 1.65rem;
+  padding-top: 0.45rem;
+  text-align: center;
+  line-height: 0.4rem;
+  font-size: 0.28rem;
+  color: #494848;
+}
+footer .choose a {
+  font-size: 0.28rem;
+  color: #494848;
+  margin-right: 0.1rem;
+  margin-left: 0.1rem;
+}
+footer .copy {
+  font-size: 0.26rem;
+  color: #9a9b9c;
+}

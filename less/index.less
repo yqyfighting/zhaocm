@@ -1,0 +1,184 @@
+@import "zcm.less";
+
+.logo{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    background-color:#FA3432;
+    a{color:#fff}
+    color:#fff;
+    h1{.fs(30);font-weight:normal;.ml(10)}
+    .h(94);.pl(18);.pr(20);
+    .logoImg{
+        display:flex;align-items:center;
+    }
+    .register{
+        .fs(30);
+        a{.ml(8);.mr(8);}
+    }
+}
+.firstpage{
+    display:flex;align-items:center;justify-content:space-around;
+    .h(86);background:#fff;
+    a{
+        .fs(24);color:#4b4a4a;
+        &.first{
+            color:#ff3636;
+        }
+    }
+}
+
+.swipe {
+              overflow: hidden;
+              visibility: hidden;
+              position: relative;
+   
+            .swipe-wrap {
+              overflow: hidden;
+              position: relative;
+            }
+            .swipe-wrap > div {
+              float:left;
+              width:100%;
+              position: relative;
+            }
+            
+            img{ /*让图片100%*/
+                width: 100%;  
+            }
+            
+            .indirector{
+                position: absolute;
+                bottom:20px;
+                left:50%;transform: translateX(-50%);
+            }
+            .indirector span{
+                display: inline-block;margin: 3px;
+                width: 10px;height: 10px;border-radius: 50%;
+                background-color: #fff;
+            }
+            .indirector span.on{
+                background-color: red;
+            }
+
+}
+
+.usernav{
+    .h(200);
+    .pt(34);
+    .listitem{
+        display:flex;align-items:center;justify-content:space-around;
+        .item{
+            p{text-align:center;.fs(20);color:#808080;.mt(10)}
+        }
+        .iconfont{
+            display:block;.w(90);.h(90);.tc;.lh(90);border-radius:30%;
+            .fs(40);color:#fff;
+        }
+        .icon-suo{
+            background-color:#4099E9;
+        }
+        .icon-women{
+            background-color: #FB6361;
+        }
+        .icon-xinshouzhiyin{
+            background-color: #40C8B0;
+        }
+        .icon-wenti{
+            background-color: #FFAE28;
+        }
+    }
+}
+section{
+     .hotTitle{
+        .h(95);.pl(25);.pr(25);
+        display:flex;justify-content:space-between;
+        align-items:center;
+        h3{
+            .h(46);.pl(60);.fs(30);.pt(8);
+            .bs(40,46);
+        };
+        .more{
+            .fs(28);color:#9a9b9c;
+        }
+    }
+}
+.hots{
+    .p(0,25);background-color:#f9f9f9;
+        h3{
+            background:url("../img/home_ico_09.png") no-repeat;}
+    .hotlist{
+        .item{
+            .h(255);border:1px solid #ccc;background-color: #fff;
+            .p(25,27);.mb(26);.br(20);
+            &:last-child{
+                .mb(0);
+            }
+        }
+    }
+    .itemtitle{
+        display:flex;align-items:center;justify-content:space-between;
+        h4{.fs(28);color:#494848};
+        .titleright{.h(30);}
+        .money{display:inline-block;.w(85);.h(30);
+        background-color: #FFAB37;.tc;color:#fff;.br(5);
+        .lh(30);.fs(22)}
+        .icon-vip{display:inline-block;.w(33);.h(30);
+        background-color: #FF7404;.tc;.lh(30);.fs(26);color:#fff;}
+    }
+    .data{
+        .mt(28);
+        display:flex;align-items:center;
+        .left{
+            .ml(43);
+            p{.fs(24);color:#FF7900}
+            .baifenshu{
+                .fs(38);color:#FB4034;
+            }
+            }
+            .middle{
+                .ml(87);
+                p{color:#9a9b9c;.fs(30);.lh(40)}
+                .day{color:#3d3c3c;.fs(28)}
+            }
+            .right{
+                .ml(70);
+                img{.w(136);.h(136);}
+            }
+        }
+    
+}
+.trends{
+    border-bottom:1px solid #ccc;.pb(20);
+    .hotTitle{
+        background-color:#f9f9f9;border-bottom:1px solid #ccc;
+    }
+    h3{
+       background:url("../img/home_ico_10.png") no-repeat;} 
+       .item{
+           display:flex;.mt(35);
+           img{
+              flex:0 0 auto;.h(110);.w(110); border-radius:10%;
+              .ml(23);
+           }
+           .wrap{
+               flex:1 1 auto;.ml(23);.lh(40);.mr(25);
+               h4{.fs(28);}
+           }
+           .origin{
+               display:flex;justify-content:space-between;color:#9a9b9c;
+               .fs(24);
+           }
+       }
+}
+footer{
+    .h(165);.pt(45);.tc;.lh(40);.fs(28);color:#494848;
+    .choose{
+        a{.fs(28);color:#494848;.mr(10);.ml(10);}
+    }
+    .copy{
+        .fs(26);color:#9a9b9c;
+    }
+    
+    
+}
