@@ -9,7 +9,7 @@
 	</head>
 	<body>
 		<header>
-			<i class="iconfont icon-fanhui"></i>
+			<a href="index.html"><i class="iconfont icon-fanhui"></i></a>
 			<h2>盈信计划2467号1期</h2>
 			<i class="iconfont icon-caidan"></i>
 		</header>
@@ -43,18 +43,17 @@
 			</ul>
 		</section>
 		<section class="status">
-			<div class="tranglewrap">
-				<div class="rect">
-					37%
-				</div>
-				<div class="trangle">
-					
-				</div>
-			</div>
 			<div class="long">
 				<div class="red">
-					
 				</div>
+				<div class="tranglewrap">
+					<div class="rect" data-cent="100">
+						0%
+					</div>
+					<div class="trangle">
+						
+					</div>
+			</div>
 			</div>
 			<div class="hased">
 				<p>已投资<span>37</span>人>></p>
@@ -65,9 +64,87 @@
 			<a href="">收益估算</a>
 			<button>立即投资</button>
 		</footer>
+		<div class="mask" id="mask">
+			<ul class="masklist">
+				<li>
+					<i class="iconfont icon-zhuye">	
+					</i>
+					<a href="">首页</a>
+				</li>
+				<li>
+					<i class="iconfont icon-suo">	
+					</i>
+					<a href="">安全保障</a>
+				</li>
+				<li>
+					<i class="iconfont icon-chongzhi">	
+					</i>
+					<a href="">我要投资</a>
+				</li>
+				<li>
+					<i class="iconfont icon-wode">	
+					</i>
+					<a href="">账号中心</a>
+				</li>
+			</ul>
+		</div>
 		<script type="text/javascript">
 			var fs=document.documentElement.clientWidth;
 			document.querySelector("html").style.fontSize=fs*100/750+"px";
+		</script>
+		<script src="zepto-master/src/zepto.js" type="text/javascript" charset="utf-8"></script>
+		<script src="zepto-master/src/touch.js" type="text/javascript" charset="utf-8"></script>
+		<script src="zepto-master/src/event.js" type="text/javascript" charset="utf-8"></script>
+		<script>
+	
+			window.requestAnimFrame = (function(){
+				  return  window.requestAnimationFrame       ||
+				          window.webkitRequestAnimationFrame ||
+				          window.mozRequestAnimationFrame    ||
+				          function( callback ){
+				            window.setTimeout(callback, 1000 / 60);
+				          };
+			})();
+			
+			window.cancelrequestAnimFrame = (function(){
+				  return  window.cancelAnimationFrame   ||
+				          window.webkitCancelAnimationFrame ||
+				          window.mozCancelAnimationFrame    ||
+				          window.clearTimeout;
+				          
+			})();
+			
+			$(function(){
+				$(".icon-caidan").on("tap",function(){
+				$("#mask").toggle();
+			})
+			});
+			$(function(){
+				var value=$(".rect").attr("data-cent");
+				var timer;
+				var step=value/30;
+				var s=0;
+				var trueRed=$(".long").width()*value/100;
+				$(".red").css("width",trueRed);
+				var middle=$(".tranglewrap").width()/2;
+				$(".tranglewrap").css("left",trueRed-middle);
+				function addNumber(){
+					s=s+step;
+//					s=s.toFixed(2);
+					s = s > value ? value :s;
+					$(".rect").html(s+"%");
+					timer=requestAnimFrame(function(){
+						addNumber();
+					});
+					if(s>=value){
+						cancelrequestAnimFrame(timer);
+					}
+				}
+				addNumber();
+				
+				
+			})
+			
 		</script>
 	</body>
 </html>

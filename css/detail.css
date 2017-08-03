@@ -126,6 +126,9 @@ h5,
 h6 {
   font-weight: normal;
 }
+a {
+  color: #fff;
+}
 header {
   height: 0.92rem;
   background-color: #FA3432;
@@ -151,6 +154,8 @@ header .iconfont {
   background-color: #d80607;
   color: #fff;
   text-align: center;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ff3c01), to(#d80607));
+  background-image: linear-gradient(to bottom, #ff3c01, #d80607);
   padding-top: 0.5rem;
 }
 .detailtop .bigcase {
@@ -230,8 +235,11 @@ header .iconfont {
 .status .tranglewrap {
   height: 0.5rem;
   width: 0.6rem;
-  margin-top: 0.1rem;
-  margin-left: 3rem;
+  position: absolute;
+  top: -0.48rem;
+  left: -0.3rem;
+  -webkit-transition: left .5s;
+  transition: left .5s;
 }
 .status .tranglewrap .rect {
   width: 0.6rem;
@@ -256,12 +264,15 @@ header .iconfont {
   height: 0.16rem;
   background-color: #F0F0F0;
   border-radius: 0.08rem;
+  position: relative;
 }
 .status .long .red {
-  width: 50%;
   background-color: #FB0502;
   height: 100%;
   border-radius: 0.08rem;
+  width: 0rem;
+  -webkit-transition: width 0.5s;
+  transition: width 0.5s;
 }
 .status .hased {
   display: -webkit-box;
@@ -316,4 +327,45 @@ footer button {
 footer a {
   color: #FF9900;
   text-decoration: underline;
+}
+#mask {
+  position: absolute;
+  display: none;
+  top: 0.92rem;
+  bottom: 1.05rem;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+#mask .masklist {
+  height: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #fff;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 0.1rem;
+  padding-bottom: 0.1rem;
+  color: #FA3432;
+}
+#mask .masklist li {
+  width: 25%;
+  text-align: center;
+  font-size: 0.2rem;
+  height: 0.8rem;
+  line-height: 0.3rem;
+  border-right: 1px solid #FDA6A4;
+}
+#mask .masklist li:last-child {
+  border-right: none;
+}
+#mask .masklist li a {
+  color: #FA3432;
+}
+#mask .masklist .iconfont {
+  display: block;
+  font-size: 0.35rem;
+  margin-bottom: 0.1rem;
 }

@@ -1,5 +1,5 @@
 @import "zcm.less";
-
+a{color:#fff;}
 header{
     .h(92);background-color: #FA3432;
     display:flex;align-items:center;justify-content:space-between;
@@ -10,7 +10,7 @@ header{
 }
 
 .detailtop{
-    .h(222);background-color:#d80607;color:#fff;.tc;
+    .h(222);background-color:#d80607;color:#fff;.tc;background-image:linear-gradient(to bottom,#ff3c01,#d80607);
     .pt(50);
     .bigcase{
         .fs(68);.h(70);.lh(70);
@@ -48,7 +48,7 @@ header{
     .h(546);background-color: #fff;border-top:1px solid #eee;
     .pl(33);.pr(36);
      .tranglewrap{
-         .h(50);.w(60);.mt(10);.ml(300);
+         .h(50);.w(60);position:absolute;.t(-48);.l(-30);transition:left .5s;
          .rect{
              .w(60);.h(32);background-color: #FB0502;.fs(22);color:#fff;
              .lh(32);.tc;
@@ -59,9 +59,9 @@ header{
          }
      }
      .long{
-         .h(16);background-color:#F0F0F0;.br(8);
+         .h(16);background-color:#F0F0F0;.br(8);position:relative;
          .red{
-             width:50%;background-color: #FB0502;height:100%;.br(8);
+             background-color: #FB0502;height:100%;.br(8);.w(0);transition:width .5s
          }
      }
      .hased{
@@ -82,5 +82,27 @@ footer{
     }
     a{
         color:#FF9900;text-decoration:underline;
+    }
+}
+
+#mask{
+    position:absolute;display:none;
+    .t(92);.b(105);left:0;right:0;
+    background-color:rgba(0,0,0,.5);
+    .masklist{
+        .h(100);display:flex;background-color: #fff;align-items:center;
+        .pt(10);.pb(10);color:#FA3432;
+        li{
+            width:25%;.tc;.fs(20);.h(80);.lh(30);border-right:1px solid #FDA6A4;
+            &:last-child{
+                border-right:none;
+            }
+            a{
+              color:#FA3432;  
+            }
+        }
+        .iconfont{
+            display:block;.fs(35);.mb(10);
+        }
     }
 }

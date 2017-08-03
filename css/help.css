@@ -125,8 +125,11 @@ h5,
 h6 {
   font-weight: normal;
 }
+body {
+  background-color: #f9f9f9;
+}
 a {
-  color: #ffffff;
+  color: #fff;
 }
 header {
   height: 0.92rem;
@@ -142,67 +145,63 @@ header {
 header .iconfont {
   font-size: 0.5rem;
 }
-.phonenumber {
-  background-color: #f9f9f9;
-  padding-bottom: 1.8rem;
+.listwrap {
+  padding-left: 0.3rem;
+  padding-right: 0.3rem;
 }
-.phonenumber .catimg {
-  height: 3.3rem;
+.listwrap .listitem .item {
   display: flex;
-}
-.phonenumber .catimg img {
-  margin: auto auto;
-  width: 1.92rem;
-  height: 1.92rem;
-}
-.phonenumber .number {
   font-size: 0.28rem;
-  color: #0E0E0E;
-  margin-bottom: 0.22rem;
-  margin-left: 0.38rem;
+  align-items: center;
+  margin-top: 0.27rem;
+  margin-bottom: 0.27rem;
 }
-.phonenumber .inset {
-  position: relative;
-}
-.phonenumber .inset .icon-shouji {
-  position: absolute;
-  font-size: 0.5rem;
-  color: #CDD6D9;
-  top: 50%;
-  transform: translateY(-60%);
-  left: 5%;
-}
-.phonenumber .inset input {
-  width: 7rem;
-  height: 0.77rem;
-  border: 1px solid #ccc;
-  margin-right: 0.25rem;
-  margin-left: 0.25rem;
+.listwrap .listitem .item .icon-zhengmian {
+  width: 0.58rem;
+  height: 0.58rem;
   border-radius: 0.1rem;
-  font-size: 0.3rem;
-  padding-left: 0.6rem;
-  background-color: #fff;
-  color: #A2A2A2;
-  font-family: "微软雅黑";
-}
-.phonenumber button {
-  margin-top: 0.23rem;
-  width: 6.92rem;
-  height: 0.81rem;
-  border: 0;
-  outline: none;
-  background-color: #FA3432;
-  border-radius: 0.1rem;
-  display: block;
-  margin-right: 0.29rem;
-  margin-left: 0.29rem;
-  font-size: 0.3rem;
-  color: #fff;
-}
-.phonenumber .agree {
-  margin-top: 0.2rem;
-  font-size: 0.25rem;
+  background-color: #FA9A33;
   text-align: center;
+  line-height: 0.58rem;
+  font-size: 0.4rem;
+  color: #fff;
+  margin-right: 0.21rem;
+}
+.listwrap .listitem .item p {
+  margin-right: auto;
+}
+.listwrap .listitem .item span {
+  font-size: 0.3rem;
+}
+.dianhua {
+  display: flex;
+  height: 1.28rem;
+  background-color: #fff;
+  align-items: center;
+  padding-left: 0.3rem;
+}
+.dianhua .iconfont {
+  width: 0.8rem;
+  height: 0.8rem;
+  border-radius: 0.1rem;
+  background-color: #17DE94;
+  font-size: 0.4rem;
+  line-height: 0.8rem;
+  text-align: center;
+  color: #fff;
+  margin-right: 0.28rem;
+}
+.dianhua .telephone .rexian {
+  font-size: 0.28rem;
+  color: #333333;
+}
+.dianhua .telephone .rexian span {
+  color: #17DE94;
+}
+.dianhua .telephone .timer {
+  font-size: 0.24rem;
+  color: #A6A5A5;
+  margin-top: 0.2rem;
 }
 footer {
   height: 1.65rem;
@@ -221,8 +220,4 @@ footer .choose a {
 footer .copy {
   font-size: 0.26rem;
   color: #9a9b9c;
-}
-.empty {
-  height: 2.8rem;
-  background-color: #f9f9f9;
 }
